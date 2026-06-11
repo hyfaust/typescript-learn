@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-env --allow-net log-analyzer.ts",
+    "dev": "deno run --allow-read --allow-write --allow-env --allow-net --watch log-analyzer.ts",
+    "test": "deno test --allow-read --allow-write",
+    "check": "deno check file-ops.ts stream-processing.ts log-analyzer.ts",
+    "demo-file": "deno run --allow-read --allow-write file-ops.ts",
+    "demo-stream": "deno run --allow-read --allow-write stream-processing.ts"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.ns", "deno.window"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "fmt": {
+    "options": {
+      "lineWidth": 100,
+      "indentWidth": 2
+    }
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

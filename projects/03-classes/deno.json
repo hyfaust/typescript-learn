@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "allowJs": true,
+    "checkJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "semiColons": true,
+      "singleQuote": false,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "dev": "deno run --watch classes.ts",
+    "start": "deno run classes.ts",
+    "inheritance": "deno run inheritance.ts",
+    "check": "deno check classes.ts inheritance.ts",
+    "lint": "deno lint classes.ts inheritance.ts",
+    "fmt": "deno fmt classes.ts inheritance.ts",
+    "test": "deno test"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-env --allow-net cli.ts",
+    "dev": "deno run --allow-read --allow-write --allow-env --allow-net --watch cli.ts",
+    "test": "deno test --allow-read --allow-write",
+    "check": "deno check cli.ts parser.ts utils.ts"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.ns", "deno.window"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "fmt": {
+    "options": {
+      "lineWidth": 100,
+      "indentWidth": 2
+    }
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}
