@@ -27,6 +27,11 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+repo_name: hyfaust/typescript-learn
+repo_url: https://github.com/hyfaust/typescript-learn
 
 nav:
   - 首页: index.md
