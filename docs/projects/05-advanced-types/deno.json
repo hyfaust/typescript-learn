@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "singleQuote": false,
+      "semiColons": true
+    }
+  },
+  "tasks": {
+    "run:union-types": "deno run --allow-read --allow-write union-types.ts",
+    "run:type-guards": "deno run --allow-read --allow-write type-guards.ts",
+    "run:mapped-types": "deno run --allow-read --allow-write mapped-types.ts",
+    "run:all": "deno run --allow-read --allow-write union-types.ts && deno run --allow-read --allow-write type-guards.ts && deno run --allow-read --allow-write mapped-types.ts",
+    "check": "deno check *.ts",
+    "lint": "deno lint",
+    "fmt": "deno fmt"
+  }
+}

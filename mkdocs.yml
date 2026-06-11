@@ -1,0 +1,75 @@
+site_name: TypeScript 从入门到精通
+site_description: TypeScript 学习路径 - Deno 运行时
+site_url: ''
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - 首页: index.md
+  - 学习路径:
+    - 概述: learning-path/index.md
+    - 环境准备: learning-path/environment-setup.md
+    - 学习建议: learning-path/learning-tips.md
+  - 阶段一：基础入门:
+    - 项目1：基础入门: projects/01-basics/index.md
+    - 项目2：接口和类型: projects/02-interfaces/index.md
+    - 项目3：类和面向对象: projects/03-classes/index.md
+  - 阶段二：进阶特性:
+    - 项目4：泛型编程: projects/04-generics/index.md
+    - 项目5：高级类型: projects/05-advanced-types/index.md
+    - 项目6：模块和命名空间: projects/06-modules/index.md
+  - 阶段三：高级特性:
+    - 项目7：异步编程: projects/07-async/index.md
+    - 项目8：错误处理和测试: projects/08-error-testing/index.md
+    - 项目9：装饰器和元数据: projects/09-decorators/index.md
+  - 阶段四：实战项目:
+    - CLI工具: projects/10-cli-tool/index.md
+    - 文件处理工具: projects/11-file-processing/index.md
+    - Web应用: projects/12-web-app/index.md
+  - TypeScript 与 JavaScript:
+    - 类型系统: typescript-vs-javascript/type-system.md
+    - 高级特性: typescript-vs-javascript/advanced-features.md
+    - 开发体验: typescript-vs-javascript/development-experience.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
