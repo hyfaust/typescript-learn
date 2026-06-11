@@ -1,16 +1,5 @@
 # TypeScript 高级类型
 
-## 目录
-1. [联合类型（Union Types）](#联合类型union-types)
-2. [交叉类型（Intersection Types）](#交叉类型intersection-types)
-3. [类型守卫（Type Guards）](#类型守卫type-guards)
-4. [可辨识联合（Discriminated Unions）](#可辨识联合discriminated-unions)
-5. [类型别名 vs 接口](#类型别名-vs-接口)
-6. [映射类型（Mapped Types）](#映射类型mapped-types)
-7. [条件类型（Conditional Types）](#条件类型conditional-types)
-8. [示例代码说明](#示例代码说明)
-9. [练习题](#练习题)
-
 ## 联合类型（Union Types）
 
 ### 什么是联合类型？
